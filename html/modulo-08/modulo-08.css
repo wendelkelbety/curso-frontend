@@ -1,0 +1,447 @@
+* {
+    margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+	font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+	background-image: url(./cafe-fundo.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+    overflow: overlay;
+}
+div {
+    padding: 20px 0;
+    margin: 0;
+}
+
+.width-100{
+    width: 100%;
+    width: 100vw;
+    background-color: transparent;
+    padding: 20px 0;
+    height: 70vh;
+}
+
+nav {
+	float: left;
+	width: 20vw;
+	padding: 0 20px;
+}
+
+.navegacao {
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 20px;
+	height: 50vh;
+	width: 15vw;
+}
+
+.navegacao li a {
+	color: white;
+	text-decoration: none;
+	font-size: 1.4rem;
+}
+
+.navegacao li {
+	padding-bottom: 5px;
+}
+
+.navegacao li a:hover {
+	color: yellow;
+}
+
+.article-exercicio-08 {
+	float: left;
+	width: 75vw;
+	height: 60vh;
+	padding: 20px;
+	margin-left: 20px;
+	border-radius: 30px;
+    background-color: rgba(255, 255, 240, 0.8);
+}
+
+.article-exercicio-08 h2{
+	color: rgb(139, 69,19);
+	padding-top: 10px;
+	font-size: 1.0vw;
+}
+.article-exercicio-08 h3{
+	color: black;
+	font-size: 1.4vw;
+}
+
+.article-exercicio-08-suporte {
+	float: left;
+	width: 40vw;
+	height: 65vh;
+	padding: 20px;
+	margin-left: 15vw;
+	border-radius: 30px;
+    background-color: rgba(255, 255, 240);
+}
+
+.article-exercicio-08-contato {
+	float: left;
+	width: 60vw;
+	height: 65vh;
+	padding: 20px;
+	margin-left: 5vw;
+	border-radius: 30px;
+    background-color: rgba(255, 255, 240);
+}
+
+.div-contato-produto-01 img{
+    background-color: transparent;
+	position: relative;
+    width: 15vh;
+    height: 15vh;
+    overflow: hidden;
+    border-radius: 50%;
+	padding: 0 0 0 0;
+	left: 1vw;
+}
+.div-contato-produto-02 img{
+    background-color: transparent;
+	position: relative;
+    width: 15vh;
+    height: 15vh;
+    overflow: hidden;
+    border-radius: 50%;
+	padding: 0 0 0 0;
+	float: right;
+	top: -8vh;
+	right: 2vw;
+}
+.div-contato-produto-03 img{
+    background-color: transparent;
+	position: relative;
+    width: 15vh;
+    height: 15vh;
+    overflow: hidden;
+    border-radius: 50%;
+	padding: 0 0 0 0;
+	left: 1vw;
+}
+.div-contato-produto-04 img{
+    background-color: transparent;
+	position: relative;
+    width: 15vh;
+    height: 15vh;
+    overflow: hidden;
+    border-radius: 50%;
+	padding: 0 0 0 0;
+	float: right;
+	top: -8vh;
+	right: 2vw;
+}
+.div-contato-produto-05 img{
+    background-color: transparent;
+	position: relative;
+    width: 15vh;
+    height: 15vh;
+    overflow: hidden;
+    border-radius: 50%;
+	padding: 0 0 0 0;
+	left: 1vw;
+}
+.div-contato-produto-06 img{
+    background-color: transparent;
+	position: relative;
+    width: 15vh;
+    height: 15vh;
+    overflow: hidden;
+    border-radius: 50%;
+	padding: 0 0 0 0;
+	float: right;
+	top: -8vh;
+	right: 2vw;
+}
+.article-exercicio-08-contato div img:hover{
+	-moz-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+	cursor: pointer;
+}
+.article-exercicio-08 div img:hover{
+	-moz-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+	cursor: pointer;
+}
+
+.div-convite-contato{
+	background-color: transparent;
+	width: 100%;
+	height: 55vh;
+	overflow: auto;
+}
+.div-convite-contato h1{
+	font-size: 1.6vw;
+}
+.div-contato-produto-01 h3{
+	position: relative;
+	left: 10vw;
+	top: -4vh;
+	width: 50%;
+	font-size: 1vw;
+	color: #8B4513;
+}
+.div-contato-produto-02 h3{
+	position: relative;
+	right: 2vw;
+	float: right;
+	top: 2vh;
+	width: 50%;
+	font-size: 1vw;
+	color: #8B4513;
+}
+.div-contato-produto-03 h3{
+	position: relative;
+	left: 10vw;
+	top: -4vh;
+	width: 50%;
+	font-size: 1vw;
+	color: #8B4513;
+}
+.div-contato-produto-04 h3{
+	position: relative;
+	right: 2vw;
+	float: right;
+	top: 2vh;
+	width: 50%;
+	font-size: 1vw;
+	color: #8B4513;
+}
+.div-contato-produto-05 h3{
+	position: relative;
+	left: 10vw;
+	top: -4vh;
+	width: 50%;
+	font-size: 1vw;
+	color: #8B4513;
+}
+.div-contato-produto-06 h3{
+	position: relative;
+	right: 2vw;
+	float: right;
+	top: 2vh;
+	width: 50%;
+	font-size: 1vw;
+	color: #8B4513;
+}
+
+.div-convite-contato label{
+	position: relative;
+	top: 10vh;
+	left: 2vw;
+	font-size: 1vw;
+	width: 80%;
+}
+
+.header-exercicio-08{
+	width: 100vw;
+	background-color: rgba(0, 0, 0, 0.9);
+	height: 20vh;
+	color: white;
+	padding: 30px;
+}
+
+.header-exercicio-08 div{
+	float: left;
+}
+.header-exercicio-08 h2{
+	font-size: 2.0vw;
+}
+.header-exercicio-08 h3{
+	font-size: 1.0vw;
+}
+
+.grafico-01 {
+	position: relative;
+    background-color: transparent;
+    width: 12vh;
+    height: 12vh;
+    overflow: hidden;
+    border-radius: 50%;
+	float: left;
+	padding: 0 0 0 0;
+	top: -12%;
+	left: 50vw;
+}
+.grafico-01 img {
+    width: 100%;
+    height: 100%;
+}
+.grafico-01:hover{
+	-moz-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+.grafico-02 {
+	position: relative;
+    background-color: transparent;
+    width: 30vh;
+    height: 30vh;
+    overflow: hidden;
+    border-radius: 50%;
+	float: left;
+	padding: 0 0 0 0;
+	top: 10vh;
+	left: 30vw;
+}
+.grafico-02 img {
+    width: 100%;
+    height: 100%;
+}
+.grafico-02:hover{
+	-moz-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+.grafico-03 {
+    background-color: transparent;
+	position: relative;
+    width: 4.5vh;
+    height: 4.5vh;
+    overflow: hidden;
+    border-radius: 50%;
+	top: 1vh;
+	padding: 0 0 0 0;
+	left: 5vw;
+	float: left;
+}
+.grafico-03 img {
+    width: 100%;
+    height: 100%;
+}
+.grafico-03:hover{
+	-moz-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+	cursor: pointer;
+}
+.grafico-04 {
+    background-color: transparent;
+	position: relative;
+    width: 4.5vh;
+    height: 4.5vh;
+    overflow: hidden;
+    border-radius: 50%;
+	top: 1vh;
+	left: 6vw;
+	padding: 0 0 0 0;
+	float: left;
+}
+.grafico-04 img {
+    width: 100%;
+    height: 100%;
+}
+.grafico-04:hover{
+	-moz-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+	cursor: pointer;
+}
+
+.grafico-05 {
+    background-color: transparent;
+	position: relative;
+    width: 4.5vh;
+    height: 4.5vh;
+    overflow: hidden;
+    border-radius: 50%;
+	top: 1vh;
+	left: 7vw;
+	padding: 0 0 0 0;
+	float: left;
+}
+.grafico-05 img {
+    width: 100%;
+    height: 100%;
+}
+.grafico-05:hover{
+	-moz-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+	cursor: pointer;
+}
+
+.grafico-06 {
+    background-color: transparent;
+	position: relative;
+    width: 4.5vh;
+    height: 4.5vh;
+    overflow: hidden;
+    border-radius: 50%;
+	top: 1vh;
+	left: 8vw;
+	padding: 0 0 0 0;
+	float: left;
+}
+.grafico-06 img {
+    width: 100%;
+    height: 100%;
+}
+.grafico-06:hover{
+	-moz-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+	cursor: pointer;
+}
+
+.footer-exercicio-08{
+	width: 100vw;
+	background-color: rgba(0, 0, 0, 0.9);
+	height: 10vh;
+	text-align: center;
+}
+.divfooter-icones{
+	width: 100vw;
+	text-align: center;
+}
+.footer-exercicio-08 h1{
+	position: relative;
+	font-size: 0.8vw;
+	color: azure;
+	top: 5vh;
+}
+
+[type="submit"]{
+	width: 8vw;
+	height: 4vh;
+	border-radius: 1.4rem;
+	border: none;
+	background: #4682B4;
+	color: white;
+}
+[type="submit"]:hover{
+	opacity: 0.8;
+	cursor: pointer;
+}
+[type="text"], [type="email"], textarea{
+	width: 100%;
+}
+[type="text"], [type="email"]{
+	border-radius: 1.6rem;
+}
+
+label{
+	display: block;
+	font-size: 0.8vw;
+	font-weight: bold;
+	color: #4682B4;
+}
+input{
+	padding: 0.6vw;
+}
+textarea{
+	height: 10vh;
+}

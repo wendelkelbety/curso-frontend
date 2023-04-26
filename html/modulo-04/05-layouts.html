@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>HTML - Layouts</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width-device-width, initial-scale=1">
+		<style type="text/css">
+			* {
+			  box-sizing: border-box;
+			}
+
+			body {
+			  font-family: Arial, Helvetica, sans-serif;
+			}
+
+			/* Style the header */
+			header {
+			  background-color: #666;
+			  padding: 30px;
+			  text-align: center;
+			  font-size: 35px;
+			  color: white;
+			}
+
+			/* Create two columns/boxes that floats next to each other */
+			nav {
+			  float: left;
+			  width: 30%;
+			   
+			  background: #ccc;
+			  padding: 20px;
+			}
+
+			/* Style the list inside the menu */
+			nav ul {
+			  list-style-type: none;
+			  padding: 0;
+			}
+
+			article {
+			  float: left;
+			  padding: 20px;
+			  width: 70%;
+			  background-color: #f1f1f1;
+			}
+
+			/* Clear floats after the columns */
+			section::after {
+			  background: #ccc;
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			/* Style the footer */
+			footer {
+			  background-color: #777;
+			  padding: 10px;
+			  text-align: center;
+			  color: white;
+			}
+
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+			@media (max-width: 600px) {
+			  nav, article {
+			    width: 100%;
+			    height: auto;
+			  }
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h2>Título da Página</h2>
+		</header>
+
+		<section>
+			<nav>
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#sobre">Sobre</a></li>
+					<li><a href="./06-formularios.html">Contato</a></li>
+				</ul>
+			</nav>
+
+			<article>
+				<h1>Título Artigo</h1>
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rutrum purus et ipsum varius consequat. Sed dictum velit at rutrum efficitur. Cras quis enim velit. Curabitur auctor, est a blandit efficitur, sapien ipsum fermentum libero, et laoreet ipsum velit eu mi. Fusce convallis orci id nunc scelerisque iaculis. Cras non lorem quis mi sodales consequat nec in quam. Donec consequat facilisis quam nec tristique. Mauris id ultricies ex, lobortis consequat sapien. Mauris in ex eu sem vehicula imperdiet at quis massa. Mauris placerat metus non eros varius iaculis. Duis ut sem eget ante semper tempor vitae a dolor.</p>
+
+				<p>Pellentesque in mauris lacinia, dictum ante ut, ullamcorper enim. Nullam laoreet justo arcu, vitae imperdiet velit gravida sed. Vestibulum scelerisque sagittis pellentesque. Sed quis ullamcorper metus, quis semper turpis. Nunc lacinia nibh lorem, vel euismod ex feugiat sed. Nulla at velit eu dui malesuada tincidunt. Sed ac diam maximus, ultrices ante vitae, auctor augue.</p>
+			</article>
+		</section>
+
+		<footer>
+			<p>Desenvolvido por Wendel</p>
+		</footer>
+	</body>
+</html>

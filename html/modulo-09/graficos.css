@@ -1,0 +1,40 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 1.6rem;
+    width: 100%;
+}
+
+/*Circulo*/
+#grafico-01 {
+    background-color: brown;
+    width: 400px;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 50%;
+    filter: drop-shadow(8px 8px 10px #333);
+}
+
+#grafico-01 img {
+    width: 100%;
+    height: auto;
+}
+
+/*filtros*/
+.filtro{
+    filter: grayscale(100%); /*escala de cinza*/
+    filter: blur(5px); /*desofque*/
+    filter: brightness(0%); /*brilho*/
+    filter: invert(100%); /*inverção de cores*/
+    filter: opacity(100%); /*opacidade*/
+    filter: saturate(200%) sepia(100%); /*cobinar filtros separados com espaço*/
+}
+
+.filtro:hover{
+    filter: grayscale(0%);
+}
+

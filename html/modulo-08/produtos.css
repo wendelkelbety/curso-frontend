@@ -1,0 +1,43 @@
+.divprodutos{
+    width: 100%;
+    height: 55vh;
+    overflow: auto;
+}
+.tabela-produtos{
+    background-color: transparent;
+    border: none;
+}
+.tabela-produtos tbody{
+    width: 100%;
+}
+.tabela-produtos tr td:nth-child(1){
+    text-align: center;
+    width: 12vw;
+    height: 12vh;
+}
+.tabela-produtos tr td:nth-child(2){
+    position: relative;
+    width: 80vw;
+}
+.tabela-produtos tr td:nth-child(3){
+    width: 10vw;
+    padding-right: 10vw;
+    font-size: 1.2vw;
+    text-align: right;
+    color: brown;
+    position: relative;
+    top: -4vh;
+}
+.tabela-produtos tr td label{
+    font-size: 0.6vw;
+    position: relative;
+    top: -6vh;
+}
+.imgproduto{
+    background-color: transparent;
+    width: 10vh;
+    height: 10vh;
+    overflow: hidden;
+    border-radius: 50%;
+	padding: 0 0 0 0;
+}
