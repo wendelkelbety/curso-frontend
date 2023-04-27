@@ -15,6 +15,9 @@
 
 ## GitFlow
 Fluxo do Git 
+- git flow init
+- git flow feature start
+- git flow feature finish
 
 ## Branchs
 São ramificações / versões paralelas
