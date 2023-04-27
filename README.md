@@ -29,4 +29,10 @@ São ramificações / versões paralelas
 ### Merge
 Mecla branchs
 
-- 
+- você pode precisar resolver conflitos manualmente
+- git merge main
+
+### Pull Requests
+Mescla de branchs no repositorio
+permite code review
+o repositorio resolve os conflitos automaticamente
