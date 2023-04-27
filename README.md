@@ -5,6 +5,7 @@
 
 ## Comandos
 - git config (--global, --get)
+- git fetch --all
 
 ## Commits
 - git add *
@@ -22,3 +23,10 @@ São ramificações / versões paralelas
 - Devlop
 - DOD Definition of Done: criterios de aceite
 - Versionamento
+- git checkout -b (nome da branch que deseja criar)
+- git checkout dev (troca de branch)
+
+### Merge
+Mecla branchs
+
+- 
