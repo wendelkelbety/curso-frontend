@@ -15,6 +15,9 @@
 
 ## GitFlow
 Fluxo do Git 
+- git flow init
+- git flow feature start
+- git flow feature finish
 
 ## Branchs
 São ramificações / versões paralelas
@@ -29,4 +32,10 @@ São ramificações / versões paralelas
 ### Merge
 Mecla branchs
 
-- 
+- você pode precisar resolver conflitos manualmente
+- git merge main
+
+### Pull Requests
+Mescla de branchs no repositorio
+permite code review
+o repositorio resolve os conflitos automaticamente
