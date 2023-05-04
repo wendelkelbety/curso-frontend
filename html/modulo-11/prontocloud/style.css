@@ -16,13 +16,13 @@ body{
 .container{
     display: block;
     float: left;
-    padding: 20px;
+    padding: 20px 20px 0 0;
     width: 100%;
     margin: 0 auto;
 }
 
 header{
-    background: #fff;
+    background: #708090;
     display: block;
     float: left;
     width: 100%;
@@ -115,30 +115,30 @@ section article{
 }
 
 footer{
-    background-color: #254159;
-    color: #ffffff;
+    background-color: #708090;
+    color: black;
     display: block;
     float: left;
     width: 100%;
     padding: 20px;
 }
 footer p{
-    font-size: 1.4rem;
+    font-size: 1.8rem;
 }
 footer small{
-    font-size: 80%;
+    font-size: 1.4rem;
     display: block;
 }
 
 #tenho-interesse {
-    background-color: #b8c8d6;
+    background-color: #D3D3D3;
     width: 100%;
 }
 
 #tenho-interesse form,
 .cognito.c-med .c-forms-form,
 .cognito.c-med .c-forms-form div {
-    background-color: #b8c8d6 !important;
+    background-color: #D3D3D3 !important;
 }
 
 #tenho-interesse .cognito .c-forms-form .c-forms-form-title h2,
