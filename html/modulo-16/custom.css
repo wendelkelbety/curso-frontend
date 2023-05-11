@@ -1,0 +1,40 @@
+header{
+    background-color: #ff7f50;
+    margin-bottom: 10px;
+}
+
+body{
+    background-color: #f5f5dc;
+}
+
+section{
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+}
+
+input, textarea{
+    margin-bottom: 1rem;
+}
+
+.card{
+    width: 32%;
+    float: left;
+    margin: 5px;
+}
+
+.imglogotipo{
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.nav a{
+    color: white;
+}
+
+.nav a, button, img:hover{
+    cursor: pointer;
+}
+
+.carousel-caption h5{
+    color: black;
+}
