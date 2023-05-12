@@ -29,10 +29,10 @@
                         <a class="nav-link" href="products.html">Produtos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">Sobre nós</a>
+                        <a class="nav-link nav-modal-open" href="about.html" rel="sobre">Sobre nós</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contato</a>
+                        <a class="nav-link nav-modal-open" href="contact.html" rel="contato">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -110,6 +110,40 @@
         </div>
     </div>
 
+    <div class="subscribe-form">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <div class="line-dec"></div>
+                        <h1>Receber Novidades</h1>
+                    </div>
+                </div>
+                <div class="col-md-8 offset-md-2">
+                    <div class="main-content">
+                        <p>Insira seus dados abaixo para receber informações atualizadas dos nossos produtos</p>
+                        <div class="container">
+                            <form id="subscribe" action="" method="get" class="form">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <fieldset>
+                                            <input type="text" name="email" id="email" class="form-control" placeholder="Digite seu e-mail...">
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <fieldset>
+                                            <button type="submit" id="form-submit" class="button">Inscreva-se</button>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="footer">
         <div class="container">
             <div class="row">
@@ -148,12 +182,49 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="copyright-text">
-                        <p>WebStore &copy; Todos os direitos reservados
-                        </div>
+                        <p>WebStore &copy; Todos os direitos reservados</p>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="modalId" tabindex="-1" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTitleId">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                <div class="modal-body">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contato" class="visually-hidden">
+        <form action="" class="form">
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input class="form-control" type="text" id="nome" name="nome" placeholder="Digite seu nome" aria-describedby="helpNome">
+                <small id="helpNome" class="text-muted">Digite um nome valido</small>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">E-mail</label>
+                <input class="form-control" type="text" id="email" name="email" placeholder="Digite seu E-email" aria-describedby="helpEmail">
+                <small id="helpEmail" class="text-muted">Digite um e-amil valido</small>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+
+    <div id="sobre" class="visually-hidden">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolor a rerum quasi esse dolore mollitia labore magni sed. Neque sint numquam quas excepturi laboriosam consequuntur minima suscipit quam quisquam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti commodi voluptatibus rerum dolores molestias minima, facere, quisquam corporis placeat, ea consequatur labore ex. Architecto sunt animi nobis mollitia sapiente eum.</p>
+    </div>
 
     <script src="../jquery/jquery-3.7.0.min.js"></script>
     <script src="../bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
