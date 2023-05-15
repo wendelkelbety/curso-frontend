@@ -751,13 +751,9 @@ a {
 }
 
 .invalid{
-<<<<<<< HEAD
-	border-color: #F00;
-=======
 	border-color: #F00;;
 }
 
 .text-muted{
 	display: none;
->>>>>>> d2101800abd1373bc1933f0a9c5ddd1f972dbcba
 }

@@ -139,8 +139,6 @@ $(document).ready(function (){
    $('body').on('blur', '#email', function(){
         validate($(this));
    })
-=======
-   })*/
 })
 
 $('body').on('submit', '.modal-body .form', function(e){
@@ -254,5 +252,4 @@ $('body').on('blur', '#phone', function(){
 $('body').on('blur', '#cpf', function(){
     $(this).mask('000.000.000-00');
     validate($(this));
->>>>>>> d2101800abd1373bc1933f0a9c5ddd1f972dbcba
 })
