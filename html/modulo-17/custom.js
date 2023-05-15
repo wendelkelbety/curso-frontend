@@ -133,12 +133,12 @@ $(document).ready(function (){
         }*/
    })
 
-   $('body').on('blur', '#nome', function(){
+   /*$('body').on('blur', '#nome', function(){
         validate($(this));
    })
    $('body').on('blur', '#email', function(){
         validate($(this));
-   })
+   })*/
 })
 
 $('body').on('submit', '.modal-body .form', function(e){
