@@ -17,7 +17,7 @@ function tarefaCSS(callback){
         './node_modules/bootstrap/dist/css/bootstrap.css',
         './vendor/owl/owl.carousel.min.css',
         './node_modules/@fortawesome/fontawesome-free/css/fontawesome.css',
-        './vendor/jquery-ui/jquery-ui.min.css',
+        //'./vendor/jquery-ui/jquery-ui.min.css',
         './src/css/style.css'])
         .pipe(stripCss())
         .pipe(concat('libs.css'))
@@ -35,7 +35,7 @@ function tarefaJS(callback){
         './node_modules/bootstrap/dist/js/bootstrap.js',
         './vendor/owl/owl.carousel.min.js',
         './vendor/jquery-mask/jquery.mask.js',
-        './vendor/jquery-ui/jquery-ui.js',
+        //'./vendor/jquery-ui/jquery-ui.js',
         './src/js/custom.js'])
     .pipe(babel({comments:false, presets:['@babel/env']}))
     .pipe(concat('libs.js'))
@@ -84,7 +84,13 @@ gulp.task('serve', function(){
     gulp.watch('./src/**/*').on('change', reload)
 })
 
-const process = series(tarefaHTML, tarefaCSS, tarefaJS)
+function end(callback){
+    console.log("Tarefas Concluidas...")
+    return callback()
+}
+
+// series x parallel
+const process = series(tarefaHTML, tarefaCSS, tarefaJS, end)
 
 exports.styles = tarefaCSS
 exports.scripts = tarefaJS

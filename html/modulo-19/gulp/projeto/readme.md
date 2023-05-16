@@ -42,6 +42,10 @@ Todo processo é executado a partir do node.js e gulp-cli (linha de comando)
 
 ## Trabalhando com o Gulp
 - Baseado em funções, tasks
+- Organização do projeto
+- Otimização de arquivos
+- Mesclagem e Minificação de CSS e JS
+- Diminuição de tamanho (bytes) de imagem
 
 ## OBS
 - npm install gulp
@@ -51,3 +55,8 @@ Todo processo é executado a partir do node.js e gulp-cli (linha de comando)
 - npm cache clean --force
 - --save-dev
 - http-server "./dist"
+
+## Para rodar o projeto
+- executar comandos:
+npm install
+gulp serve
