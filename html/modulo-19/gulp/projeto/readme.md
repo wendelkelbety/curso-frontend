@@ -43,9 +43,6 @@ Todo processo é executado a partir do node.js e gulp-cli (linha de comando)
 ## Trabalhando com o Gulp
 - Baseado em funções, tasks
 
-
-
-
 ## OBS
 - npm install gulp
 - npm install gulp-concat
@@ -53,3 +50,4 @@ Todo processo é executado a partir do node.js e gulp-cli (linha de comando)
 - npm install gulp-uglify
 - npm cache clean --force
 - --save-dev
+- http-server "./dist"
