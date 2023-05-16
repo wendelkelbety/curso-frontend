@@ -1,14 +1,16 @@
 const gulp = require("gulp")
+const {series} = require("gulp")
 const concat = require("gulp-concat")
 const cssmin = require("gulp-cssmin")
 const rename = require("gulp-rename")
 const uglify = require("gulp-uglify")
 const image = require("gulp-imagemin")
+const htmlmin = require("gulp-htmlmin")
 
-function tarefaCSS(){
+function tarefaCSS(callback){
     //return gulp.src('./vendor/**/*.css')
-    return gulp.src([
-        './node_modules/bootstrap/dist/css/bootstrap.min.css',
+    gulp.src([
+        './node_modules/bootstrap/dist/css/bootstrap.css',
         './vendor/owl/owl.carousel.min.css',
         './node_modules/@fortawesome/fontawesome-free/css/fontawesome.css',
         './vendor/jquery-ui/jquery-ui.min.css',
@@ -17,13 +19,15 @@ function tarefaCSS(){
         .pipe(cssmin())
         .pipe(rename({suffix:'.min'}))
         .pipe(gulp.dest('./dist/css'))
+
+    return callback();
 }
 
-function tarefaJS(){
+function tarefaJS(callback){
     //return gulp.src('./vendor/**/*.js')
-    return gulp.src([
+    gulp.src([
         './node_modules/jquery/jquery-3.7.0.min.js',
-        './vendor/bootstrap-5.3.0-alpha3-dist/js/bootstrap.js',
+        './node_modules/bootstrap/dist/js/bootstrap.js',
         './vendor/owl/owl.carousel.min.js',
         './vendor/jquery-mask/jquery.mask.js',
         './vendor/jquery-ui/jquery-ui.js',
@@ -32,10 +36,12 @@ function tarefaJS(){
     .pipe(uglify())
     .pipe(rename({suffix:'.min'}))
     .pipe(gulp.dest('./dist/js'))
+
+    return callback();
 }
 
-function tarefasImagem(){
-    return gulp.src('./src/images/*')
+function tarefasImagem(callback){
+    gulp.src('./src/images/*')
     .pipe(image({
         pngquant: true,
         optipng: false,
@@ -48,8 +54,21 @@ function tarefasImagem(){
         quiet: true
     }))
     .pipe(gulp.dest('./dist/images'))
+
+    return callback();
 }
 
-exports.styles = tarefaCSS
-exports.scripts = tarefaJS
+// POC - Proof of Concept
+function tarefaHTML(callback){
+
+    gulp.src('./src/**/*.html')
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest('./dist'))
+
+    return callback();
+}
+
+//exports.styles = tarefaCSS
+//exports.scripts = tarefaJS
 exports.images = tarefasImagem
+exports.default = series(tarefaHTML, tarefaCSS, tarefaJS)

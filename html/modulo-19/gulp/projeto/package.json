@@ -1,7 +1,7 @@
 {
   "name": "projeto",
   "version": "1.0.0",
-  "description": "",
+  "description": "Kit de ferramentas de automação de tarefas baseadas em javascript",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,6 +10,7 @@
   "author": "wendel iwashita",
   "license": "ISC",
   "devDependencies": {
+    "bootstrap": "^5.2.3",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-cssmin": "^0.2.0",
@@ -19,7 +20,6 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.4.0",
-    "bootstrap": "^5.2.3",
     "gulp-htmlmin": "^5.0.1",
     "jquery": "^3.7.0"
   }

@@ -51,5 +51,5 @@ Todo processo é executado a partir do node.js e gulp-cli (linha de comando)
 - npm install gulp-concat
 - npm install gulp-cssmin
 - npm install gulp-uglify
-- npm cache clean -- force
+- npm cache clean --force
 - --save-dev
