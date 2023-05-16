@@ -1,5 +1,5 @@
 const gulp = require("gulp")
-const {series} = require("gulp")
+const {parallel} = require("gulp")
 const concat = require("gulp-concat")
 const cssmin = require("gulp-cssmin")
 const rename = require("gulp-rename")
@@ -71,4 +71,4 @@ function tarefaHTML(callback){
 //exports.styles = tarefaCSS
 //exports.scripts = tarefaJS
 exports.images = tarefasImagem
-exports.default = series(tarefaHTML, tarefaCSS, tarefaJS)
+exports.default = parallel(tarefaHTML, tarefaCSS, tarefaJS)
