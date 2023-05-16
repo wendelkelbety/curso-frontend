@@ -12,7 +12,7 @@ function tarefaCSS(){
         './vendor/owl/owl.carousel.min.css',
         './node_modules/@fortawesome/fontawesome-free/css/fontawesome.css',
         './vendor/jquery-ui/jquery-ui.min.css',
-        './assets/css/style.css'])
+        './src/css/style.css'])
         .pipe(concat('libs.css'))
         .pipe(cssmin())
         .pipe(rename({suffix:'.min'}))
@@ -27,7 +27,7 @@ function tarefaJS(){
         './vendor/owl/owl.carousel.min.js',
         './vendor/jquery-mask/jquery.mask.js',
         './vendor/jquery-ui/jquery-ui.js',
-        './assets/js/custom.js'])
+        './src/js/custom.js'])
     .pipe(concat('libs.js'))
     .pipe(uglify())
     .pipe(rename({suffix:'.min'}))
@@ -35,7 +35,7 @@ function tarefaJS(){
 }
 
 function tarefasImagem(){
-    return gulp.src('./assets/images/*')
+    return gulp.src('./src/images/*')
     .pipe(image({
         pngquant: true,
         optipng: false,
