@@ -8,6 +8,7 @@ const uglify = require("gulp-uglify")
 const image = require("gulp-imagemin")
 const htmlmin = require("gulp-htmlmin")
 const babel = require("gulp-babel")
+const sass = require('gulp-sass')(require('node-sass'))
 const browserSync = require("browser-sync").create()
 const reload = browserSync.reload
 
@@ -18,7 +19,7 @@ function tarefaCSS(callback){
         './vendor/owl/owl.carousel.min.css',
         './node_modules/@fortawesome/fontawesome-free/css/fontawesome.css',
         //'./vendor/jquery-ui/jquery-ui.min.css',
-        './src/css/style.css'])
+        ])
         .pipe(stripCss())
         .pipe(concat('libs.css'))
         .pipe(cssmin())
@@ -31,7 +32,7 @@ function tarefaCSS(callback){
 function tarefaJS(callback){
     //return gulp.src('./vendor/**/*.js')
     gulp.src([
-        './node_modules/jquery/jquery-3.7.0.min.js',
+        './node_modules/jquery/dist/jquery.min.js',
         './node_modules/bootstrap/dist/js/bootstrap.js',
         './vendor/owl/owl.carousel.min.js',
         './vendor/jquery-mask/jquery.mask.js',
@@ -74,6 +75,15 @@ function tarefaHTML(callback){
     return callback();
 }
 
+function tarefaSASS(callback){
+
+    gulp.src('./src/scss/**/*.scss')
+    .pipe(sass())
+    .pipe(gulp.dest('./dist/css'))
+
+    return callback()
+}
+
 gulp.task('serve', function(){
     browserSync.init({
         server: {
@@ -90,9 +100,10 @@ function end(callback){
 }
 
 // series x parallel
-const process = series(tarefaHTML, tarefaCSS, tarefaJS, end)
+const process = series(tarefaHTML, tarefaCSS, tarefaJS, tarefaSASS, end)
 
 exports.styles = tarefaCSS
 exports.scripts = tarefaJS
 exports.images = tarefasImagem
+exports.sass = tarefaSASS
 exports.default = process
