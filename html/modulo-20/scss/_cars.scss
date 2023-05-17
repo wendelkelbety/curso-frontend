@@ -1,0 +1,17 @@
+.cars {
+    h2 {
+        color: $color-04;
+    }
+    li {
+        color: $color-04;
+
+        a {
+            background-color: #4682B4;
+        }
+        a:hover {
+            cursor: pointer;
+            background-color: gray;
+            transition: background-color .4s;
+        }
+    }
+}
