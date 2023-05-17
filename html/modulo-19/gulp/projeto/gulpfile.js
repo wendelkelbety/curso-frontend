@@ -31,7 +31,7 @@ function tarefaCSS(callback){
 function tarefaJS(callback){
     //return gulp.src('./vendor/**/*.js')
     gulp.src([
-        './node_modules/jquery/jquery-3.7.0.min.js',
+        './node_modules/jquery/dist/jquery.min.js',
         './node_modules/bootstrap/dist/js/bootstrap.js',
         './vendor/owl/owl.carousel.min.js',
         './vendor/jquery-mask/jquery.mask.js',

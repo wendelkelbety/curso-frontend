@@ -22,7 +22,7 @@ function tarefaCSS(){
 function tarefaJS(){
     //return gulp.src('./vendor/**/*.js')
     return gulp.src([
-        './node_modules/jquery/jquery-3.7.0.min.js',
+        './node_modules/jquery/dist/jquery.min.js',
         './vendor/bootstrap-5.3.0-alpha3-dist/js/bootstrap.js',
         './vendor/owl/owl.carousel.min.js',
         './vendor/jquery-mask/jquery.mask.js',
