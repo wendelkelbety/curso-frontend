@@ -1,0 +1,27 @@
+@mixin theme($theme: $color-03, $bg: $bg-color) {
+    border: 1px solid $theme;
+    background-color: $bg;
+}
+
+.cars {
+    @extend %blocks;
+    h2 {
+        color: $color-04 !important;
+    }
+    .destaks {
+        @include theme;
+    }
+    li {
+        @include theme($theme: #ccc, $bg: #fff);
+        color: $color-04;
+
+        a {
+            background-color: #4682B4 !important;
+        }
+        a:hover {
+            cursor: pointer;
+            background-color: gray !important;
+            transition: background-color .4s;
+        }
+    }
+}
