@@ -34,3 +34,20 @@ São ferramentas utilizadas para aumentar a produtividade no desenvolvimento CSS
 ## OBS
 - sass "pasta scss" para "novo arquivo que sera criado ./css/style.css"
 - --watch faz as alterações sem precisar usar o comando novamente
+
+## BEM CSS
+- Block
+- Element
+- modifer
+
+- Padrão de projeto / Design paterns
+- Exemplo: 
+- .cars__title
+- .cars__list
+- .cars__item
+- .cars__item--destaks
+- .cars__button
+- .cars__img-container
+
+- .b__e--m
+- teste
