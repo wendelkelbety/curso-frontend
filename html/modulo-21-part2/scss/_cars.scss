@@ -3,6 +3,15 @@
     background-color: $bg;
 }
 
+@keyframes destack-item {
+    from {
+        box-shadow: 0px 0px 50px 12px #fff;
+    }
+    to {
+        box-shadow: 0px 0px 50px 12px red;
+    }
+}
+
 .cars {
     &__title {
         color: $color-04 !important;
@@ -13,7 +22,8 @@
         color: $color-02;
 
         &--destack{
-            @include theme($theme: $color-02, $bg: $color-04);
+            //@include theme($theme: $color-02, $bg: gray);
+            animation: destack-item 2s alternate infinite;
         }
 
     }
@@ -22,7 +32,7 @@
     }
     &__button:hover {
         cursor: pointer;
-        background-color: #589cd4 !important;
+        background-color: red !important;
         transition: background-color .4s;
     }
 }
