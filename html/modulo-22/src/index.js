@@ -1,9 +1,14 @@
 import './style.scss'
 import img from './expresso.jpg'
 
+function rootStyle(){
+    const elemetroot = document.getElementById('root')
+    elemetroot.classList.add('container')
+}
+
 function titleComponent(){
     const elemeth1 = document.createElement('h1')
-    elemeth1.innerHTML = 'Hello Wolrd 2'
+    elemeth1.innerHTML = 'Um café delicioso para um Programador.'
     elemeth1.classList.add('title')
 
     return elemeth1
@@ -16,5 +21,6 @@ function imageComponent(){
     return elementimg
 }
 
-document.body.appendChild(titleComponent())
-document.body.appendChild(imageComponent())
+rootStyle()
+document.getElementById('root').appendChild(titleComponent())
+document.getElementById('root').appendChild(imageComponent())
