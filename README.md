@@ -39,3 +39,60 @@ Mecla branchs
 Mescla de branchs no repositorio
 permite code review
 o repositorio resolve os conflitos automaticamente
+
+
+# Stack Frontend - EBAC
+
+## HTML - Hypertext Markup Language
+- HTML4
+- Tableless
+- HTML5
+- Bootstrap
+
+## CSS - Cascade Style Sheet
+- Selectors
+- Reset
+- Box model
+- Inheritance
+- Google Fonts
+- Font Awesome
+- SASS
+- BEM
+- Flexbox
+- Animations
+
+## JS - JavaScript
+- Variables
+- Functions
+- Events
+- DOM
+- Node / NPM
+- JQuery
+- Gulp
+- Webpack
+
+## Design
+- Alinhamento
+- Repetição
+- Contraste
+- Cores: RGB / Hexadecimal
+
+## Performance
+- TinyPNG
+- Minify: HTML, CSS, JS
+- CORS
+
+## Network
+- Internet
+- HTTP
+- Ping
+
+## Produtividade
+- Planning
+- Agile
+- Prompt
+- Git
+- Photoshop
+- Notepad++
+- Sublime Text 2
+- Visual Studio Code
