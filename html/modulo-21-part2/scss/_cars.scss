@@ -4,24 +4,25 @@
 }
 
 .cars {
-    @extend %blocks;
-    h2 {
+    &__title {
         color: $color-04 !important;
+        font-size: 2rem;
     }
-    .destaks {
-        @include theme;
-    }
-    li {
+    &__item {
         @include theme($theme: #ccc, $bg: #fff);
-        color: $color-04;
+        color: $color-02;
 
-        a {
-            background-color: #4682B4 !important;
+        &--destack{
+            @include theme($theme: $color-02, $bg: $color-04);
         }
-        a:hover {
-            cursor: pointer;
-            background-color: gray !important;
-            transition: background-color .4s;
-        }
+
+    }
+    &__button {
+        background-color: #4682B4 !important;
+    }
+    &__button:hover {
+        cursor: pointer;
+        background-color: #589cd4 !important;
+        transition: background-color .4s;
     }
 }
