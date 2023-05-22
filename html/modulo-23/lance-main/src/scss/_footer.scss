@@ -2,8 +2,10 @@ footer {
     p {
         color: $font-color-primary;
         font-size: $font-size-default;
+        text-align: center;
         a {
             color: $color-secondary;
+            text-decoration: none !important;
         }
     }
 }
