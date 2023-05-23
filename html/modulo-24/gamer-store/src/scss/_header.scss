@@ -1,0 +1,48 @@
+@keyframes destack-item {
+    0% {
+      box-shadow: 0px 0px 50px 12px #EE82EE;
+    }
+    50% {
+      box-shadow: 0px 0px 50px 12px #BA55D3;
+    }
+    100%{
+        box-shadow: 0px 0px 50px 12px #7B68EE;
+    }
+  }
+
+header .container {
+
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .hero {
+        align-items: flex-end;
+        animation: destack-item 2s alternate infinite;
+        background-image: url('../assets/images/Gamer-logo.png');
+        background-repeat: no-repeat;
+        background-position: top center;
+        justify-content: center;
+        flex-direction: column;
+        height: 45rem;
+        display: flex;
+        padding-bottom: 4rem;
+        width: 100%;
+
+        h1 {
+            position: relative;
+            top: 40%;
+            padding: 1rem 0 0;
+            text-align: center;
+            width: 100%;
+            @media (max-width: 767px){
+              font-size: 1.4rem;
+            }
+      
+            @media (min-width: 768px) and (max-width: 1023px ){
+              font-size: 1.6rem;
+            }
+        }
+    }
+
+}

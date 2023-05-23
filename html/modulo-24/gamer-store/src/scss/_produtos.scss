@@ -1,0 +1,16 @@
+
+#produtos {
+    
+    background-color: #dcdcdc;
+    @media (max-width: 767px){
+        h1{
+            font-size: 2rem;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 1023px ){
+        h1{
+            font-size: 2.5rem;
+        }
+    }
+
+}
