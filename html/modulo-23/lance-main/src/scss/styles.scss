@@ -1,4 +1,4 @@
-$color-primary: #A9A9A9;
+$color-primary: black;
 $color-secondary: #3a8bcd;
 $font-color-primary: #ffffff;
 $font-color-secondary: #454545;
@@ -8,7 +8,7 @@ $font-size-default: 1.6rem;
 $font-size-nav: 1.8rem;
 
 @import 'fonts';
-@import url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap');
 @import 'nav';
 
 html {
@@ -18,7 +18,7 @@ html {
 
 body {
     background-color: $color-primary;
-    font-family: $font-default;
+    font-family: "louis", serif;
     margin: 0;
 }
 
@@ -40,7 +40,6 @@ article {
 
 h2 {
     color: $font-color-primary;
-    font-family: 'freshman', sans-serif;
     font-weight: 700;
     font-size: 2rem;
     margin-top: 4rem;
@@ -62,7 +61,7 @@ section {
 }
 
 .container {
-    display: flex;
+    display: block;
     flex-flow: column;
     margin: 0 auto;
     max-width: 90vw;
