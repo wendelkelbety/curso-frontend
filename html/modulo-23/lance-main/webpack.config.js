@@ -2,7 +2,7 @@ const path = require('path')
 const HtmlWebpack = require('html-webpack-plugin')
 const MiniCssExtract = require('mini-css-extract-plugin')
 const HtmlWebpackLiveReload = require('html-webpack-live-reload-plugin')
-const ImageminPlugin = require('imagemin-webpack-plugin')
+//const ImageminPlugin = require('imagemin-webpack-plugin') //imagemin-webpack-plugin
 
 module.exports = {
 

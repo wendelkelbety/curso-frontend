@@ -2,7 +2,7 @@
 #sobre {
     background-color: none;
     .container {
-        background-color: rgba(0, 0, 0, .4);
+        background-color: rgba(168, 214, 245, 0.4);
         border-radius: .5rem;
         margin: 2rem auto;
         padding: 0 2rem 2rem;
@@ -11,7 +11,7 @@
     article {
         
         p {
-            font-size: $font-size-default;
+            font-size: 1.8rem;
             color: $font-color-primary;
         }
     }
