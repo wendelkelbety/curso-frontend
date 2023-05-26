@@ -1,6 +1,7 @@
 import carro from './cars.js';
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
+import produto1 from './produto1.svg';
 
 function App() {
 let listacarros = '';
@@ -33,7 +34,7 @@ carro.map( (carrokm => {
 }))
 
 carro.forEach(lista => {
-    listacarros += '<div><p>Produto: '+lista.id + ' </p><p>Descrição: '+lista.nome + ' </p><p>Marca: '+lista.marca +' </p><p>Ano: '+
+  listacarros += '<div><p>Produto: '+lista.id + ' </p><p>Descrição: '+lista.nome + ' </p><p>Marca: '+lista.marca +' </p><p>Ano: '+
                     lista.ano +' </p><p>KM rodado: '+lista.km+' </p><p>Valor: '+lista.valor+'</p></div>'
 });
 
