@@ -1,8 +1,5 @@
 import carro from './cars.js';
-import Header from "./components/header/Header";
-import Footer from "./components/footer/Footer";
 
-function App() {
 let listacarros = '';
 let carrosusados = '';
 let carrosnovos = '';
@@ -32,21 +29,13 @@ let revisao = carro.map( (carrokm => {
 }))
 
 carro.forEach(lista => {
-    listacarros += '<div className="item-carro">Produto: '+lista.id + ' <br>Descrição: '+lista.nome + ' <br>Marca: '+lista.marca +' <br>Ano: '+
+    listacarros += '<div class"item-carro">Produto: '+lista.id + ' <br>Descrição: '+lista.nome + ' <br>Marca: '+lista.marca +' <br>Ano: '+
                     lista.ano +' <br>KM rodado: '+lista.km+' <br> Valor: '+lista.valor+'</div><br>'
  });
 
-  return (
-    <div className='App'>
-      <Header title="My header" subtitle="subtitle2" />
-      <div className="container" dangerouslySetInnerHTML={{__html: listacarros+'<br>Carros novos: '+carrosnovos+
-      '<br>Carros usados: '+carrosusados+
-      '<br><br>Revisão: '+ revisao+
-      '<br>Temos um total de: '+valorCarros.valor+'R$, em automoveis de alta qualidade.'}}>
-      </div>
-      <Footer note="Footer Note" />
-    </div>
-  );
-}
-
-export default App;
+document.getElementById('main').innerHTML = 
+    listacarros+
+    '<br>Carros novos: '+carrosnovos+
+    '<br>Carros usados: '+carrosusados+
+    '<br><br>Revisão: '+ revisao+
+    '<br>Temos um total de: '+valorCarros.valor+'R$, em automoveis de alta qualidade.';
