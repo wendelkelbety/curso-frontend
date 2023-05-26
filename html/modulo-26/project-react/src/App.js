@@ -6,6 +6,7 @@ function App() {
 let listacarros = '';
 let carrosusados = '';
 let carrosnovos = '';
+let revisao = '';
 
 let valorCarros = carro.reduce( (val1, val2) => {
     return {valor: val1.valor + val2.valor}
@@ -19,7 +20,7 @@ carro.filter( (carro)=> {
     }
 })
 
-let revisao = carro.map( (carrokm => {
+carro.map( (carrokm => {
     let kmrevisao = 0;
     kmrevisao = carrokm.km;
     if (carrokm.km > 0){
@@ -28,21 +29,31 @@ let revisao = carro.map( (carrokm => {
         }while(kmrevisao > 10000);
     }
 
-    return carrokm.nome+' faltam '+(10000-kmrevisao)+'km para a revisão, considerando revisão a cada 10000km.<br>'
+    revisao += '<p><b>'+carrokm.nome+'</b>: faltam '+(10000-kmrevisao)+'km para a revisão</p>'
 }))
 
 carro.forEach(lista => {
-    listacarros += '<div className="item-carro">Produto: '+lista.id + ' <br>Descrição: '+lista.nome + ' <br>Marca: '+lista.marca +' <br>Ano: '+
-                    lista.ano +' <br>KM rodado: '+lista.km+' <br> Valor: '+lista.valor+'</div><br>'
- });
+    listacarros += '<div><p>Produto: '+lista.id + ' </p><p>Descrição: '+lista.nome + ' </p><p>Marca: '+lista.marca +' </p><p>Ano: '+
+                    lista.ano +' </p><p>KM rodado: '+lista.km+' </p><p>Valor: '+lista.valor+'</p></div>'
+});
 
   return (
     <div className='App'>
-      <Header title="My header" subtitle="subtitle2" />
-      <div className="container" dangerouslySetInnerHTML={{__html: listacarros+'<br>Carros novos: '+carrosnovos+
-      '<br>Carros usados: '+carrosusados+
-      '<br><br>Revisão: '+ revisao+
-      '<br>Temos um total de: '+valorCarros.valor+'R$, em automoveis de alta qualidade.'}}>
+      <Header title="Concessionária" />
+      <h1 id='produtos'>Produtos</h1>
+      <div className="container" dangerouslySetInnerHTML={{__html: listacarros}}></div>
+      <div className='carros-usados-novos' id='novoseusado'>
+        <h2>Carros novos</h2>
+        <p dangerouslySetInnerHTML={{__html:carrosnovos}}></p>
+        <h2>Carros usados</h2>
+        <p dangerouslySetInnerHTML={{__html:carrosusados}}></p>
+      </div>
+      <div className='revisao' id='revisao'>
+        <h2>Revisão</h2>
+        <div dangerouslySetInnerHTML={{__html: revisao}}></div>
+      </div>
+      <div className='informacao'>
+        <p dangerouslySetInnerHTML={{__html: 'Temos um total de: '+valorCarros.valor+'R$, em automoveis de alta qualidade.'}}></p>
       </div>
       <Footer note="Footer Note" />
     </div>

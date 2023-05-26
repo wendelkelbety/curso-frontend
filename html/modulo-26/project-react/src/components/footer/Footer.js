@@ -1,10 +1,10 @@
 import React from "react";
 import "./Footer.css";
 
-export default function Header(props) {
+export default function Header() {
   return (
     <div className="footer">
-      <h1>{props.note}</h1>
+      <h1>Desenvolvido por Wendel</h1>
     </div>
   );
 }

@@ -14,31 +14,94 @@ code {
 }
 
 .App {
-  background: linear-gradient(#121212, #212b46);
+  background: #fff;
+}
+
+.App  h1{
+  color: black;
+  margin: 0;
+  padding: 30px 0 0 20px;
+}
+
+.carros-usados-novos {
+  background-color: darkgrey;
+  margin: 20px 25px;
+  border-radius: 10px;
+}
+
+.carros-usados-novos h2{
+  color: #4c6781;
+  margin: 0;
+  padding-left: 15px;
+}
+
+.carros-usados-novos p {
+  padding: 0 0 10px 20px;
+  font-size: 1.1rem;
+  color: #fff;
+  margin: 0;
+}
+
+.revisao {
+  margin: 20px 25px;
+  border-radius: 10px;
+  padding-bottom: 10px;
+  background-color: darkgray;
+}
+
+.revisao h2 {
+  color: #4c6781;
+  margin: 0;
+  padding-left: 15px;
+}
+
+.revisao p {
+  margin: 0;
+  color: #fff;
+  padding: 0 0 0 20px;
+}
+
+.informacao {
+  margin: 20px 25px;
+  border-radius: 10px;
+  padding: 10px 0 10px 0;
+  background-color: darkgray;
+}
+
+.informacao p {
+  padding-left: 5px;
+  color: #fff;
 }
 
 .container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 70%;
-  padding: 40px 0;
+  height: 400px;
   color: #fff;
+
+  @media (max-width: 767px){
+    display: table-row;
+  }
 }
 
 .container div {
-  background-color: #fff;
-  border: lightgray;
-  box-shadow: 0px 0px 2px 4px gray;
+  background-color: #e9e5e5;
+  box-shadow: 0px 0px 8px 4px #dddada;
   width: 200px;
-  height: auto;
+  height: 50%;
   color: black;
   cursor: pointer;
   transition: transform .5s;
   border-radius: 8px;
+  padding: 20px;
+  margin: 20px;
 }
 
 .container div:hover {
   transform: scale(1.06);
+}
+
+.container p {
+  width: 200px;
+  margin: 0;
+  padding: 0;
 }
