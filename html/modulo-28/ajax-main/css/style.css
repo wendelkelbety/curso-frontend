@@ -12,9 +12,22 @@ body {
 }
 
 .container {
-    max-width: 1100px;
+    max-width: 70%;
     margin: 0 auto;
     display: block;
+    min-height: 75vh;
+}
+
+.pesq-repositorio {
+    background-color: #DCDCDC;
+    margin: 15px;
+    padding: 15px;
+}
+
+.pesq-posts {
+    background-color: #DCDCDC;
+    margin: 15px;
+    padding: 15px;
 }
 
 #posts {
@@ -52,6 +65,7 @@ input[type="text"] {
 
 .button {
     background-color: darkblue;
+    text-decoration: none;
     border: 0;
     border-radius: 5px;
     color: #fff;
@@ -69,6 +83,78 @@ input[type="text"] {
 }
 
 .posts-item {
-    width: calc(100% / 3);
+    background-color: lightgray;
+    border: 1px solid #B0C4DE;
+    width: calc(90% / 2);
     padding: 1rem;
+    margin: 1rem;
+}
+
+/*header*/
+header {
+    width: 100%;
+    height: 15vh;
+}
+
+header .container-header {
+    background-color: gray;
+    padding: 10px;
+    height: 100%;
+}
+
+.logo {
+    float: left;
+    width: 10vw;
+}
+
+.logo img{
+    max-width: 100px;
+    height: auto;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+    transition: transform .3s;
+    cursor: pointer;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    float: left;
+    width: 70vw;
+    height: 100%;
+}
+
+.titulo h1 {
+    color: #fff;
+    font-size: 3rem;
+    padding: 1rem 0 0;
+    text-align: center;
+    width: 100%;
+}
+
+
+/*footer*/
+footer {
+    background-color: gray;
+    border-top: 1px solid white;
+    width: 100%;
+    height: 10vh;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: #fff;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    font-size: 1.4rem;
+    text-decoration: none !important;
 }
