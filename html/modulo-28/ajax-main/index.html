@@ -8,19 +8,35 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <header>
+        <div class="container-header">
+            <div class="logo">
+                <img src="./images/logo-github.png" alt="Gamer Store">
+            </div>
+            <div class="titulo">
+                <h1>GitHub Info</h1>
+            </div>
+        </div>
+    </header>
     <div class="container">
-        <section>
-            <h1>Posts</h1>
-            <div id="posts"></div>
-            <a class="button" id="loadPost">Carregar mais posts</a>
-        </section>
-        <hr />
-        <section>
+        <section class="pesq-repositorio">
             <h1>Github</h1>
             <div id="main"></div>
             <input type="text" placeholder="nome do usuário" id="username">
         </section>
+        <section class="pesq-posts">
+            <h1>Posts</h1>
+            <div id="posts"></div>
+            <a class="button" id="loadPost" href="#loadPost">Carregar mais posts</a>
+        </section>
+        <hr />
     </div>
+    <footer>
+        <div class="container-footer">
+            <p>&copy; Todos os direitos reservados. <br>
+            <small>Desenvolvido por <a href="https://github.com/wendelkelbety">Wendel</a>.</small></p>
+        </div>
+    </footer>
     <script src="./js/script.js"></script>
     <script src="./js/posts.js"></script>
 </body>
