@@ -1,32 +1,92 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes destaq-form {
+    0% {
+      box-shadow: 0px 0px 50px 12px #EE82EE;
+    }
+    50% {
+      box-shadow: 0px 0px 50px 12px #BA55D3;
+    }
+    100%{
+        box-shadow: 0px 0px 50px 12px #7B68EE;
+    }
+}
+
+.container {
+    background: radial-gradient(circle, rgba(147,10,226,1) 0%, rgba(0,0,0,1) 40%);
+    display: flex;
+    justify-content: center;
+    animation: destack-item 2s alternate infinite;
+}
+
 form {
-    border: 1px solid #999;
+    background: rgba(0, 0, 0, 0.6);
+    width: 40%;
+    border: 1px solid rgba(0, 0, 0, 0.6);
     border-radius: 1rem;
     padding: 1rem;
     margin: 2rem;
+    animation: destaq-form 2s alternate infinite;
 }
 .input-group,
 input {
     display: block;
-    font-size: 1.8rem;
-    width: 50rem;
-    margin: 1rem auto
+    font-size: 1.2rem;
+    border-radius: 18px;
+    text-decoration: none;
+    border: none;
+    width: 95%;
+    margin: 0px;
+    padding: 10px;
+}
+
+input {
+    background: rgb(255, 255, 255, 0.8);
 }
 
 label {
-    font-size: 1.6rem;
+    color: #fff;
+    font-size: 1.4rem;
 }
 
 button {
-    border-radius: 5px;
-    background-color: darkblue;
+    border-radius: 20px;
+    background-color: #7600b1;
+    border: none;
     color: #fff;
     font-size: 1.6rem;
-    padding: 1rem 1.5rem;
+    padding: 0.5rem 1rem;
+    margin: 40px 20px;
+    float: right;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+button:hover {
+    cursor: pointer;
+    transition: transform .3s, box-shadow .2s;
+    transform: scale(1.04);
+    box-shadow: 0px 0px 12px 2px #4c3bac;
+}
+
+#mensagem {
+    position: absolute;
+    left: 0;
+    margin: 20px 30px;
 }
 
 #mensagem p {
     font-size: 1.4rem;
-    color: #f00;
+    color: #fff;
 }
 
 strong {
