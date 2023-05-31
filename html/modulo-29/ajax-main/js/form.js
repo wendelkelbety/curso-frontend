@@ -31,7 +31,6 @@ function updateAdress(data) {
         bairro.value=(data.bairro);
         cidade.value=(data.localidade);
         uf.value=(data.uf);
-        mensagem.innerHTML = '';
     } else {
         mensagem.innerHTML = `CEP não encontrado`;
     }
@@ -64,7 +63,6 @@ form.addEventListener('submit', function(event){
     msg.forEach(item => {
         markup += `<p>${item}</p>` 
     });
-
     mensagem.innerHTML = markup;
 
     // if(msg.length == 0)  form.submit();
