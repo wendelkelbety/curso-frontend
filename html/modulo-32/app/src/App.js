@@ -1,6 +1,6 @@
 import './App.css';
 import Button from '@mui/material/Button';
-import Dashboard from './components/dashboard/dashboard'
+import Dashboard from './components/dashboard'
 
 function App() {
   return (
