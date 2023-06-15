@@ -1,3 +1,4 @@
+import * as React from 'react';
 import './App.css';
 import Button from '@mui/material/Button';
 import Dashboard from './components/dashboard'
