@@ -206,5 +206,5 @@ function DashboardContent(props) {
 }
 
 export default function Dashboard(props) {
-  return <DashboardContent title={props.title} />;
+  return <DashboardContent title={props.title}/>;
 }
