@@ -4,7 +4,7 @@ import '@testing-library/jest-dom/extend-expect';
 import App from './App';
 
 function deprecentes (valor) {
-  return valor < 0
+  return valor > 0
 }
 
 test('teste de titulo', () => {
@@ -22,5 +22,6 @@ test('teste grafico atualizado', () => {
 test('teste deposito recente', () => {
   render(<App />);
   const testCase = document.querySelector('.App .deprecente');
-  expect(deprecentes(parseFloat(testCase.innerHTML.replace('$','')))).toBeTruthy()
+  const strNum = testCase.innerHTML.replace(/[^0-9]/g, '');
+  expect(deprecentes(parseFloat(strNum))).toBeTruthy();
 });
