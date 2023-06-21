@@ -13,8 +13,70 @@ body {
     font-size: 1.6rem;
 }
 
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 140px;
+}
+
+.row-header {
+    height: 100% !important;
+    width: 95%;
+}
+
+.container {
+    height: 100%;
+    width: 100vw !important;
+}
+
+.divlogo {
+    display: flex;
+    align-items: center;
+    float: left;
+    height: 100%;
+}
+
+.imglogotipo {
+    width: 180px;
+    height: auto;
+    margin-left: 160px;
+}
+.imgsobre {
+    width: 800px !important;
+    height: auto;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    float: left;
+    height: 100%;
+}
+
+.nav {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.titulo li {
+    text-decoration: none !important;
+    padding: 0 10px 0 110px !important;
+}
+
+.titulo li a {
+    color: black !important;
+    font-size: 1.6rem;
+    font-weight: 450;
+}
+.titulo li a:hover{
+    color: #3a8bcd !important;
+    transition: color .3S;
+}
+
 section {
-    margin: 4rem auto 8rem;
+    margin: 19rem auto 8rem;
 }
 
 h2 {
@@ -22,8 +84,21 @@ h2 {
 }
 
 .container {
-    width: 1000px;
     margin: 0 auto;
+}
+
+#localizacao h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+}
+
+#localizacao p{
+    color: #4F4F4F;
+    text-align: center;
+    font-size: 4rem;
+    line-height: 1.2;
 }
 
 .parent {
@@ -63,13 +138,44 @@ h2 {
     border-color: #339;
 }
 
+#sobre h2 {
+    font-size: 6rem;
+    font-weight: 700;
+}
+#sobre p {
+    color: #4F4F4F;
+    padding: 20px 0 30px 0;
+    font-size: 3.5rem;
+    line-height: 1.2;
+}
+
+#sobre a {
+    color: #3a8bcd;
+    border: solid 1px black;
+    padding: 10px 30px 10px 30px;
+    font-size: 3rem;
+}
+
+#sobre a:hover {
+    cursor: pointer;
+}
+
+.mapouter {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    position: none !important;
+    text-align: center !important;
+}
+
 @media (max-width: 620px) {
     .container {
         max-width: 560px;
     }
 }
 
-@media (prefers-color-scheme: dark) {
+/*@media (prefers-color-scheme: dark) {
     body {
         background-color: #333;
         color: #fff;
@@ -81,4 +187,4 @@ h2 {
         background-color: #fbb;
         color: #33f;
     }
-}
+}*/
