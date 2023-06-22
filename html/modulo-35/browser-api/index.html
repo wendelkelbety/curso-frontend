@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Browser API</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img class="imglogotipo img-fluid" src="./img/LOGO.png" alt="LOGO">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#top">Início</a></li>
+                <li><a href="#produtos">Localização</a></li>
+                <li><a href="#compatibilidade">Serviços</a></li>
+                <li><a href="#sobre">Segmentos</a></li>
+            </ul>
+        </div>
+    </header>
+    <section id="transf-digital">
+        <div class="div-img-transf-digital">
+            <img src="./img/img-1.png" alt="">
+        </div>
+        <div class="div-text-transf-digital">
+            <h2>Transformação Digital</h2>
+            <p>Lorem Ipsum is simply dummy
+                text of the printing and typesetting
+                industry. Lorem Ipsum has been the
+                industry's standard dummy text ever
+                since the 1500s.</p>
+            <a onclick=getNotifications()>Ativar Notificações</a>
+        </div>
+    </section>
+
+    <section id="localizacao">
+        <h2>Localização</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and<br>
+        typesetting industry. Lorem Ipsum has been the industry's standard.</p>
+        <svg class="circulo-localizacao">
+            <circle cx="135" cy="336" r="336" stroke="transparent" stroke-width="3" fill="#0074FF" />
+        </svg>
+        <div class="mapa">
+            <iframe width="975" height="494" id="gmap_canvas" src="" name="map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        </div>
+        <div class="linha-localizacao">
+            <svg width="330" height= "5px">
+                <line x1="15" y1="0" x2="330" y2="0" style="stroke:rgba(0, 0, 0, 1);stroke-width:6;" />
+            </svg>
+        </div>
+    </section>
+
+    <section id="servicos">
+        <h2>Serviços</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and<br>
+            typesetting industry. Lorem Ipsum has been the industry's standard</p>
+        <svg class="circulo-servicos">
+            <circle cx="400" cy="336" r="332" stroke="#0074FF" stroke-width="4" fill="transparent" />
+        </svg>
+        <div class="container-cards-servicos">
+            <div class="cards-servicos">
+                <div>
+                    <h3>01</h3>
+                    <p>UX Design</p>
+                    <p class="card-info-servicos">o	Web Development 
+                        o	SaaS Platform Development
+                        o	Full Stack Development<br><br>
+                        We create innovative solutions to solve customer problems and giving you more control over product.
+                        </p>
+                </div>
+                <div>
+                    <h3>02</h3>
+                    <p>Front-end</p>
+                    <p class="card-info-servicos">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                </div>
+                <div>
+                    <h3>03</h3>
+                    <p>Test</p>
+                    <p class="card-info-servicos">Designing success through creative web design for your business to be the best.<br><br>
+                        Improving customer engagement with enhanced user experience.</p>
+                </div>
+                <div>
+                    <h3>04</h3>
+                    <p>Delivery</p>
+                    <p class="card-info-servicos">Develop your MVP with our experts who help create a solution that solves customer problems.<br><br>
+                        We fill in the technology gaps for you.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="segmentos">
+        <h2>Segmentos</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and<br>
+            typesetting industry. Lorem Ipsum has been the industry's </p>
+        <div class="container-cards-segmentos">
+            <div class="cards-segmentos">
+                <div class="cards">
+                    <div class="card-segmento-img">
+                        <img src="./img/segmento-ecomerce.png" alt="">
+                    </div>
+                    <h2>E-Commerce</h2>
+                    <p>We assist physical and digital retailers, wholesalers, and suppliers to automate commercial operations and business workflows.
+                        With e-commerce solutions, ERPS and improvised customer services.</p>
+                </div>
+                <div class="cards">
+                    <div class="card-segmento-img">
+                        <img src="./img/segmento-fintechs.png" alt="">
+                    </div>
+                    <h2>FinTechs</h2>
+                    <p>We assist physical and digital retailers, wholesalers, and suppliers to automate commercial operations and business workflows.
+                        With e-commerce solutions, ERPS and improvised customer services.</p>
+                </div>
+                <div class="cards">
+                    <div class="card-segmento-img">
+                        <img src="./img/segmento-mobilidade.png" alt="">
+                    </div>
+                    <h2>Mobilidade</h2>
+                    <p>We assist physical and digital retailers, wholesalers, and suppliers to automate commercial operations and business workflows.
+                        With e-commerce solutions, ERPS and improvised customer services.</p>
+                </div>
+            </div>
+
+            <div class="cards-segmentos">
+                <div class="cards">
+                    <div class="card-segmento-img">
+                        <img src="./img/segmento-entretenimento.png" alt="">
+                    </div>
+                    <h2>Entretenimento</h2>
+                    <p>We assist physical and digital retailers, wholesalers, and suppliers to automate commercial operations and business workflows.
+                        With e-commerce solutions, ERPS and improvised customer services.</p>
+                </div>
+                <div class="cards">
+                    <div class="card-segmento-img">
+                        <img src="./img/segmento-direito.png" alt="">
+                    </div>
+                    <h2>Direito</h2>
+                    <p>We assist physical and digital retailers, wholesalers, and suppliers to automate commercial operations and business workflows.
+                        With e-commerce solutions, ERPS and improvised customer services.</p>
+                </div>
+                <div class="cards">
+                    <div class="card-segmento-img">
+                        <img src="./img/segmento-hospitalidade.png" alt="">
+                    </div>
+                    <h2>Hospitalidade</h2>
+                    <p>We assist physical and digital retailers, wholesalers, and suppliers to automate commercial operations and business workflows.
+                        With e-commerce solutions, ERPS and improvised customer services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="logo">
+            <img class="imglogotipo img-fluid" src="./img/LOGO - 2.png" alt="LOGO">
+        </div>
+        <p>© Copyright 2022 | All Rights Reserved</p>
+    </footer>
+
+    <script src="./js/scripts.js"></script>
+    <script src="./js/geolocation.js"></script>
+    <script src="./js/notification.js"></script>
+</body>
+</html>
