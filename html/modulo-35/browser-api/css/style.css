@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/montserrat/Montserrat-VariableFont_wght.ttf)
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -11,73 +16,178 @@ html {
 
 body {
     font-size: 1.6rem;
+    font-family: Montserrat;
 }
 
 header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 140px;
+    height: 148px;
 }
 
-.row-header {
-    height: 100% !important;
-    width: 95%;
+.logo {
+    display: flex;
+    align-items: center;
+    float: left;
+    height: 100%;
+    padding-left: 205px;
+}
+
+.menu{
+    height: 100%;
+    width: 693px;
+    margin-left: 1075px;
+}
+
+.menu ul{
+    padding-top: 68px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu ul li {
+    /*margin: auto calc(40px /2);*/
+}
+
+.menu ul li a {
+    color: black ;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.07px;
+}
+.menu ul li a:hover{
+    color: #3a8bcd ;
+    transition: color .3S;
+}
+
+#transf-digital {
+    margin: 90px auto 8rem;
+    height: 700px;
 }
 
 .container {
     height: 100%;
-    width: 100vw !important;
+    width: 95vw;
 }
 
-.divlogo {
+.div-img-transf-digital {
     display: flex;
     align-items: center;
+    position: relative;
+    width: 1050px;
+    height: 700px;
     float: left;
-    height: 100%;
 }
 
-.imglogotipo {
-    width: 180px;
-    height: auto;
-    margin-left: 160px;
-}
-.imgsobre {
-    width: 800px !important;
-    height: auto;
+.div-img-transf-digital img {
+    width: 800px;
+    margin-left: 178px;
 }
 
-.titulo {
-    display: flex;
-    align-items: center;
+.div-text-transf-digital{
+    height: 700px;
+    width: 720px;
     float: left;
-    height: 100%;
+    padding: 100px 0 0 42px;
 }
 
-.nav {
+.div-text-transf-digital h2 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.div-text-transf-digital p {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 30px 0 66px 0;
+}
+
+.div-text-transf-digital a {
+    border: solid 1px black;
+    color: #0074FF;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding: 20px 36px;
+}
+
+.div-text-transf-digital a:hover {
+    cursor: pointer;
+    color: #3a8bcd;
+    transition: color .3s;
+}
+
+#localizacao {
+    margin: 255px auto 8rem;
+    height: 800px;
+}
+
+#localizacao h2 {
     display: flex;
-    height: 100%;
+    justify-content: center;
+    justify-self: center;
     align-items: center;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 59px;
+    letter-spacing: 0em;
 }
 
-.titulo li {
-    text-decoration: none !important;
-    padding: 0 10px 0 110px !important;
+#localizacao p{
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: 0em;
+    padding-top: 30px;
 }
 
-.titulo li a {
-    color: black !important;
-    font-size: 1.6rem;
-    font-weight: 450;
-}
-.titulo li a:hover{
-    color: #3a8bcd !important;
-    transition: color .3S;
+.circulo-localizacao {
+    position: absolute;
+    height: 675px;
+    width: 800px;
+    z-index: -1;
+    top: 1165px;
+    opacity: 20%;
 }
 
-section {
-    margin: 19rem auto 8rem;
+.mapa{
+    background-color: #E2E0E0;
+    box-shadow: 0 0 16px 8px rgba(0, 116, 255 , .1);
+    width: 975px;
+    height: 494px;
+    margin: 80px 0 0 450px;
 }
+
+.div-text-localizacao {
+    padding-top: 165px;
+}
+
+.linha-localizacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    height: 170px;
+}
+
+.linha-localizacao svg {
+    height: 5px !important;
+}
+
 
 h2 {
     margin-bottom: 1rem;
@@ -85,20 +195,6 @@ h2 {
 
 .container {
     margin: 0 auto;
-}
-
-#localizacao h2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 5rem;
-}
-
-#localizacao p{
-    color: #4F4F4F;
-    text-align: center;
-    font-size: 4rem;
-    line-height: 1.2;
 }
 
 .parent {
